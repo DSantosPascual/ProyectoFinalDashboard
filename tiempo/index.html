@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiempo Meteorológico - Dashboard</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body>
+    <header>
+        <h1>Tiempo Meteorológico</h1>
+    </header>
+
+    <main>
+        <p>Ciudad: <input type="text" id="city-input" placeholder="Ingresa ciudad">
+        <button id="get-weather">Obtener Clima</button></p>
+
+        <div id="current-weather">
+            <h2>Clima Actual</h2>
+            <p id="location"></p>
+            <p id="weather-state"></p>
+            <img id="weather-icon" alt="Weather icon">
+            <p id="temperature"></p>
+            <p id="precipitation"></p>
+            <p id="humidity"></p>
+            <p id="wind"></p>
+        </div>
+
+        <div id="forecast">
+            <h2>Previsión por Horas</h2>
+            <div id="hourly-forecast"></div>
+        </div>
+    </main>
+
+    <footer>
+        <p><a href="../index.html">Volver al Dashboard</a></p>
+    </footer>
+    <script src="../JS/imagenesFondo.js"></script>
+    <script src="../JS/tiempo.js"></script>
+</body>
+</html>
+

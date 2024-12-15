@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links - Dashboard</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body>
+    <header>
+        <h1>Links Útiles</h1>
+    </header>
+
+    <main>
+        <div class="add-link-container">
+            <label for="link-title">Título del Link:</label>
+            <input type="text" id="link-title" placeholder="Introduce el título del link">
+            <label for="link-url">URL del Link:</label>
+            <input type="url" id="link-url" placeholder="Introduce la URL del link">
+            <button id="add-link-btn">Añadir Link</button>
+        </div>
+
+        <div id="links-list" class="links-list"></div>
+    </main>
+
+    <footer>
+        <p><a href="../index.html">Volver al Dashboard</a></p>
+    </footer>
+    <script src="../JS/imagenesFondo.js"></script>
+    <script src="../JS/links.js"></script>
+</body>
+</html>

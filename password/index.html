@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creador de Contraseñas - Dashboard</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body>
+    <header>
+        <h1>Creador de Contraseñas</h1>
+    </header>
+
+    <main>
+        <p>Genera una contraseña segura:</p>
+        <label for="password-length">Longitud (12-50):</label>
+        <input type="number" id="password-length" min="12" max="50" value="12">
+        <button id="generate-password">Generar Contraseña</button>
+        <div class="password-output">
+            <p id="password"></p>
+        </div>
+    </main>
+
+    <footer>
+        <p><a href="../index.html">Volver al Dashboard</a></p>
+    </footer>
+    <script src="../JS/imagenesFondo.js"></script>
+    <script src="../JS/password.js"></script> 
+</body>
+</html>

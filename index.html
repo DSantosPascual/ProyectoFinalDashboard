@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Dashboard</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Mi Dashboard</h1>
+    </header>
+
+    <nav>
+        <ul class="icon-links">
+            <li>
+                <a href="links/index.html" title="Links de Interés">
+                    <i class="fas fa-link"></i>
+                </a>
+            </li>
+            <li>
+                <a href="password/index.html" title="Creador de Contraseñas Seguras">
+                    <i class="fas fa-key"></i>
+                </a>
+            </li>
+            <li>
+                <a href="reloj/index.html" title="Reloj Digital + Fecha">
+                    <i class="fas fa-clock"></i>
+                </a>
+            </li>
+            <li>
+                <a href="tiempo/index.html" title="Información Meteorológica">
+                    <i class="fas fa-cloud-sun"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Éste es el Dashboard de Dámaso</h2>
+        <p>Espero que lo encuentres un espacio útil.</p>
+
+        <!-- Links de Interés -->
+        <section id="links">
+            <h1>Links Útiles</h1>
+            <div class="add-link-container">
+                <label for="link-title">Título del Link:</label>
+                <input type="text" id="link-title" placeholder="Introduce el título del link">
+                <label for="link-url">URL del Link:</label>
+                <input type="url" id="link-url" placeholder="Introduce la URL del link">
+                <button id="add-link-btn">Añadir Link</button>
+            </div>
+
+            <div id="links-list" class="links-list"></div>
+        </section>
+
+        <!-- Creador de Contraseñas -->
+        <section id="password">
+            <h1>Creador de Contraseñas</h1>
+            <p>Genera una contraseña segura:</p>
+            <label for="password-length">Longitud (12-50):</label>
+            <input type="number" id="password-length" min="12" max="50" value="12">
+            <button id="generate-password">Generar Contraseña</button>
+            <div class="password-output">
+                <p id="password"></p>
+            </div>
+        </section>
+
+        <!-- Reloj Digital y Fecha -->
+        <section id="reloj">
+            <h1>Reloj Digital con Fecha</h1>
+            <div class="clock">
+                <p id="clock-time"></p>
+                <p id="current-date"></p>
+            </div>
+
+            <div class="message">
+                <p id="time-message"></p>
+            </div>
+        </section>
+
+        <!-- Información Meteorológica -->
+        <section id="tiempo">
+            <h1>Tiempo Meteorológico</h1>
+            <p>Ciudad: <input type="text" id="city-input" placeholder="Ingresa ciudad">
+            <button id="get-weather">Obtener Clima</button></p>
+
+            <div id="current-weather">
+                <h2>Clima Actual</h2>
+                <p id="location"></p>
+                <p id="weather-state"></p>
+                <img id="weather-icon" alt="Weather icon">
+                <p id="temperature"></p>
+                <p id="precipitation"></p>
+                <p id="humidity"></p>
+                <p id="wind"></p>
+            </div>
+
+            <div id="forecast">
+                <h2>Previsión por Horas</h2>
+                <div id="hourly-forecast"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p><a href="../index.html">Volver al Dashboard</a></p>
+    </footer>
+
+    <script src="JS/imagenesFondo.js"></script>
+    <script src="JS/links.js"></script>
+    <script src="JS/password.js"></script>
+    <script src="JS/reloj.js"></script>
+    <script src="JS/tiempo.js"></script>
+    <script src="JS/main.js"></script>
+</body>
+</html>
